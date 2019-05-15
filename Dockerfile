@@ -4,6 +4,7 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y \
     build-essential \
+    python3-dev \
     python3-numpy \
     python3-pip \
     python3-setuptools \
