@@ -2,7 +2,14 @@ FROM balenalib/raspberrypi3
 RUN [ "cross-build-start" ]
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y python3-pip python3-setuptools libhdf5-dev libc-ares-dev libeigen3-dev python3-numpy
+    apt-get install -y \
+    python3-numpy \
+    python3-pip \
+    python3-setuptools \
+    libhdf5-dev \
+    libc-ares-dev \
+    libeigen3-dev \
+    wget
 RUN pip3 install wheel keras_applications==1.0.7 --no-deps && \
     pip3 install keras_preprocessing==1.0.9 --no-deps && \
     pip3 install h5py==2.9.0           
