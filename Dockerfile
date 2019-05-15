@@ -1,4 +1,4 @@
-FROM balenalib/raspberrypi3-python
+FROM balenalib/raspberrypi3
 RUN [ "cross-build-start" ]
 RUN apt-get update && \
     apt-get upgrade -y && \
