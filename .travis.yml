@@ -10,5 +10,5 @@ services:
 
 script:
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
-  - docker build -f Dockerfile -t rpi-docker-tensorflow-1.11 .
+  - docker build -f Dockerfile -t eifinger/rpi-docker-tensorflow-1.11 .
   - docker push eifinger/rpi-docker-tensorflow-1.11
